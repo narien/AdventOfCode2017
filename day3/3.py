@@ -19,6 +19,7 @@ def fillMatrix(fillMode):
             mem[x][y] = mSum(neighbours((x, y)))
             if mem[x][y] > input:
                 print("first larger value: ", int(mem[x][y]))
+                print(mem)
                 sys.exit()
 
 def tryChangeDir():
